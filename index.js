@@ -1,5 +1,5 @@
+const people = require("./people");
+
 const _ = require("lodash");
 
-console.log(_.last([1, 2, 3]));
-
-console.log("hello world");
+console.log(_.last(people.people));
