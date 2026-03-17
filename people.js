@@ -1,8 +1,9 @@
-var people = ["sakib", "tamim", "mashrafee"];
+const EventEmitter = require("node:events");
 
-var sakib = 123;
+class School extends EventEmitter {
+  startPeriod() {
+    this.emit("bellRing", "first class ended");
+  }
+}
 
-module.exports = {
-  people,
-  sakib,
-};
+module.exports = School;

@@ -1,5 +1,9 @@
-const fs = require("node:fs");
+const School = require("./people");
 
-fs.readFile("sakib.txt", (err, data) => {
-  console.log(data.toString());
+const schoolNew = new School();
+
+schoolNew.on("bellRing", (sakib) => {
+  console.log(`we need to run4 ${sakib}`);
 });
+
+schoolNew.startPeriod();
