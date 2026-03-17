@@ -1,5 +1,4 @@
-const people = require("./people");
+const path = require("node:path");
+const myPath = "F:/any/Node Js/index.js";
 
-const _ = require("lodash");
-
-console.log(_.last(people.people));
+console.log(path.extname(myPath));
