@@ -1,3 +1,5 @@
-const os = require("node:os");
+const fs = require("node:fs");
 
-console.log(os.platform());
+fs.readFile("sakib.txt", (err, data) => {
+  console.log(data.toString());
+});
