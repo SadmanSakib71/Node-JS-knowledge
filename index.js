@@ -1,4 +1,3 @@
-const path = require("node:path");
-const myPath = "F:/any/Node Js/index.js";
+const os = require("node:os");
 
-console.log(path.extname(myPath));
+console.log(os.platform());
