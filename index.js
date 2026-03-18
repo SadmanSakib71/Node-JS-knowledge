@@ -1,9 +1,7 @@
-const School = require("./people");
+const fs = require("node:fs");
 
-const schoolNew = new School();
+const OurReadSystem = fs.createReadStream(`${__dirname}/sakib.txt`);
 
-schoolNew.on("bellRing", (sakib) => {
-  console.log(`we need to run4 ${sakib}`);
+OurReadSystem.on("data", (data) => {
+  console.log(data.toString());
 });
-
-schoolNew.startPeriod();
