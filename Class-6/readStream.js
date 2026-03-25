@@ -15,8 +15,6 @@ const server = http.createServer((req, res) => {
     });
 
     req.on("end", () => {
-      console.log("Data loading Finished");
-
       const RealText = Buffer.concat(allData).toString();
       console.log(RealText);
 
